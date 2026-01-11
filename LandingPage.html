@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueWave Landing Page | CODSOFT</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #06b6d4, #2563eb);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .auth-buttons button {
+      margin-left: 10px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .login {
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+    }
+
+    .signup {
+      background: #ffffff;
+      color: #2563eb;
+    }
+
+    .auth-buttons button:hover {
+      transform: scale(1.05);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 10%;
+    }
+
+    .hero h2 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 35px;
+      opacity: 0.95;
+    }
+
+    .hero button {
+      padding: 14px 36px;
+      font-size: 1rem;
+      border-radius: 30px;
+      border: none;
+      background: #ffffff;
+      color: #2563eb;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #e0f7fa;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 80px 10%;
+      background: #ecfeff;
+      color: #1f2933;
+    }
+
+    section h3 {
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 50px;
+      color: #2563eb;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-box {
+      background: linear-gradient(135deg, #ffffff, #cffafe);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-box h4 {
+      color: #0891b2;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2.3rem;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>BlueWave Landing Page</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="auth-buttons">
+    <button class="login" onclick="login()">Login</button>
+    <button class="signup" onclick="signup()">Sign Up</button>
+  </div>
+</header>
+
+<div class="hero">
+  <h2>Design. Build. Launch.</h2>
+  <p>A vibrant  landing page built using HTML, CSS, and JavaScript</p>
+  <button onclick="getStarted()">Get Started</button>
+</div>
+
+<section id="features">
+  <h3>Why Choose Us?</h3>
+  <div class="features">
+    <div class="feature-box">
+      <h4>Vibrant UI</h4>
+      <p>Fresh, modern gradients using cyan and blue shades.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Responsive Design</h4>
+      <p>Looks great on mobile, tablet, and desktop devices.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Simple Tech Stack</h4>
+      <p>Built only with HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h3>About This Project</h3>
+  <div class="about">
+    <p>
+      This landing page was created as part of the CODSOFT Web Development Internship (Level 1).
+      The focus was on clean design, vibrant colors, responsiveness, and basic interactivity.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Nithish | CODSOFT Web Development Internship</p>
+</footer>
+
+<script>
+  function getStarted() {
+    alert("Welcome! This is a demo landing page.");
+  }
+
+  function login() {
+    alert("Login functionality coming soon!");
+  }
+
+  function signup() {
+    alert("Sign Up functionality coming soon!");
+  }
+</script>
+
+</body>
+</html>
